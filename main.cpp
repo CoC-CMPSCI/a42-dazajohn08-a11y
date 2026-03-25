@@ -11,8 +11,7 @@ int main()
     double weight, distance, dRate, price;
 
     cout << "Enter the package weight and distance\n";
-    cin >> weight;
-    cin >> distance;
+    cin >> distance >> weight;   
 
     // Validate weight
     if (weight <= 0 || weight > 20) {
@@ -42,7 +41,6 @@ int main()
     else
         price = dRate;
 
-    // Output
     cout << setprecision(2) << fixed;
     cout << "The shipping price for package is " << price << endl;
 
