@@ -10,7 +10,7 @@ int main()
     const double RATE20 = 4.80;
     double weight, distance, dRate, price;
 
-    cout << "Enter the package weight and distance\n";
+    cout << "Enter the package weight and distance";
     
     if (!(cin >> weight >> distance)) return 0;
 
