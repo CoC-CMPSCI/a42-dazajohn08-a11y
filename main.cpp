@@ -11,7 +11,8 @@ int main()
     double weight, distance, dRate, price;
 
     cout << "Enter the package weight and distance\n";
-    cin >> weight >> distance;
+    cin >> weight;
+    cin >> distance;
 
     // Validate weight
     if (weight <= 0 || weight > 20) {
