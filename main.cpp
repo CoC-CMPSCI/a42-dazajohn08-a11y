@@ -11,17 +11,17 @@ int main()
     const double RATE20 = 4.80;
     double weight, distance, dRate, price;
 
-    cout << "Package weight and distance\n";
+    cout << "Enter package weight (kg) and distance (miles):\n";    
     cin >> weight >> distance;
 
     if (weight <= 0 || weight > 20){
     cout << "Error: weight must be > 0 and <= 20." << endl;
-    return 0;
+    return 1;
     }
     
     if (distance < 10 || distance > 3000){
     cout << "Error: distance must be >= 10 and <= 3000." << endl;
-    return 0;
+    return 1;
     }
     
     if (weight <= 2) dRate = RATE2;
@@ -30,7 +30,7 @@ int main()
     else dRate = RATE20;
     
     if (distance > 500){
-        price = (distance / 500.00) *dRate;
+        price = (distance / 500.00) * dRate;
     } else {
         price = dRate;
     }
